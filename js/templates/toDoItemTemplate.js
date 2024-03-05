@@ -42,8 +42,7 @@ function toDoItemTemplate({todo, category, status, uid}) {
 function categoryStyles(category) {
 	const type = category.toLowerCase()
 	const styles = {
-		home: 'border-l-4 border-yellow-300/10 bg-gradient-to-r mb-2.5 from-white from-23% to-lime-200/20 to-90% shadow-sm shadow-zinc-200   rounded-md',
-		social: 'border-l-4 border-yellow-300/10  bg-gradient-to-r mb-2.5 from-white from-23%  to-yellow-200/20 to-90% shadow-sm shadow-zinc-200 rounded-md',
+		Personal: 'border-l-4 border-yellow-300/10 bg-gradient-to-r mb-2.5 from-white from-23% to-lime-200/20 to-90% shadow-sm shadow-zinc-200   rounded-md',
 		health: 'border-l-4 border-indigo-300/10 bg-gradient-to-r mb-2.5 from-white from-23%  to-indigo-200/20 to-90% shadow-sm shadow-zinc-200  rounded-md',
 		work: ' border-l-4 border-teal-300/10  bg-gradient-to-r mb-2.5 from-white from-23%  to-emerald-200/20 to-90% shadow-sm  shadow-zinc-200 rounded-md',
 		school: ' border-l-4 border-red-300/10 bg-gradient-to-r mb-2.5 from-white from-23% to-red-200/20 to-90% shadow-sm  shadow-zinc-200 rounded-md',

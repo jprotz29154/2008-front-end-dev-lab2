@@ -28,7 +28,7 @@ function toDoItemTemplate({todo, category, status, uid}) {
        
     </nav>
   
-            <p class=" text-lg font-bold text-zinc-700  ">${todo}</p>
+            <p class=" text-lg font-bold text-zinc-600  ">${todo}</p>
 
    
     
@@ -42,10 +42,10 @@ function toDoItemTemplate({todo, category, status, uid}) {
 function categoryStyles(category) {
 	const type = category.toLowerCase()
 	const styles = {
-		Personal: 'border-l-4 border-yellow-300/10 bg-gradient-to-r mb-2.5 from-white from-23% to-lime-200/20 to-90% shadow-sm shadow-zinc-200   rounded-md',
+		personal: 'border-l-4 border-purple-300/10 bg-gradient-to-r mb-2.5 from-white from-23% to-purple-200/20 to-90% shadow-sm shadow-zinc-200   rounded-md',
 		health: 'border-l-4 border-indigo-300/10 bg-gradient-to-r mb-2.5 from-white from-23%  to-indigo-200/20 to-90% shadow-sm shadow-zinc-200  rounded-md',
 		work: ' border-l-4 border-teal-300/10  bg-gradient-to-r mb-2.5 from-white from-23%  to-emerald-200/20 to-90% shadow-sm  shadow-zinc-200 rounded-md',
-		school: ' border-l-4 border-red-300/10 bg-gradient-to-r mb-2.5 from-white from-23% to-red-200/20 to-90% shadow-sm  shadow-zinc-200 rounded-md',
+		school: ' border-l-4 border-rose-300/10 bg-gradient-to-r mb-2.5 from-white from-23% to-rose-200/20 to-90% shadow-sm  shadow-zinc-200 rounded-md',
 	}
 	return styles[type]
 }
@@ -53,11 +53,10 @@ function categoryStyles(category) {
 function textStyles(category) {
 	const type = category.toLowerCase()
 	const styles = {
-		home: 'text-zinc-700',
-		social: 'text-yellow-700',
+		personal: 'text-purple-700',
 		health: 'text-indigo-700',
-		school: 'text-red-700',
-		work: 'text-teal-700',
+		school: 'text-rose-700',
+		work: 'text-Emerald-700',
 	}
 	return styles[type]
 }
@@ -65,11 +64,10 @@ function textStyles(category) {
 function headingStyles(category) {
 	const type = category.toLowerCase()
 	const styles = {
-		home: 'text-lime-950',
-		social: 'text-yellow-950',
+		personal: 'text-purple-950',
 		health: 'text-indigo-950',
-		school: 'text-red-950',
-		work: 'text-teal-950',
+		school: 'text-rose-950',
+		work: 'text-Emerald-950',
 	}
 	return styles[type]
 }
